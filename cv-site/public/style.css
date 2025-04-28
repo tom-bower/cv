@@ -15,11 +15,6 @@ body {
     border-radius: 8px;
 }
 
-
-ul {
-    padding-left: 20px;
-}
-
 @keyframes fadeIn {
     0% {
       opacity: 0;
