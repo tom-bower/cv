@@ -20,6 +20,9 @@
             primary: '#4f46e5', // Indigo
             secondary: '#6366f1', // Slightly lighter Indigo
             accent: '#a78bfa', // Purple Accent
+          },
+          screens: {
+            'xs': {'max': '300px'},
           }
         }
       }
@@ -64,31 +67,52 @@
     <div class="flex flex-col md:flex-row gap-6">
 
       <!-- Left Sidebar -->
-      <aside class="w-full md:w-1/3 light:bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg flex flex-col items-center space-y-4">
-        <img src="assets/images/profile.png" alt="Profile Photo" class="w-40 h-40 rounded-full object-cover ring-4 ring-primary mb-4">
+      <aside class="w-full md:w-1/3 light:bg-white dark:bg-gray-800 rounded-2xl shadow-lg flex flex-col items-center space-y-4">
+        <div class="p-4">
+          <img src="assets/images/profile.png" alt="Profile Photo" class="w-40 h-40 rounded-full object-cover ring-4 ring-primary mb-4 mx-auto">
+            <h1 class="text-3xl font-bold text-primary my-2">Thomas Bower</h1>
+            <p class="text-center text-gray-500 dark:text-gray-400">Seasoned software developer with more than 12 years of experience. Committed to providing high-level solutions that drive business and provide outstanding cost efficiency. Seeking an exciting position with the responsibility of mentoring and training others in best practices.</p>
 
-        <h1 class="text-3xl font-bold text-primary">Thomas Bower</h1>
-        <p class="text-center text-gray-500 dark:text-gray-400">Seasoned software developer with more than 12 years of experience. Committed to providing high-level solutions that drive business and provide outstanding cost efficiency. Seeking an exciting position with the responsibility of mentoring and training others in best practices.</p>
+            <div class="w-full">
+              <h2 class="text-lg font-semibold bg-primary text-white my-2 py-1 px-4 rounded-full inline-block mb-3">Contact</h2>
+              <ul class="space-y-3 text-gray-500 dark:text-gray-400 text-sm">
+                <li class="flex items-center">
+                  <i class="fas fa-envelope mr-2 text-accent"></i>
+                  <a href="mailto:bower.t@protonmail.com" class="hover:underline">bower.t@protonmail.com</a>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-phone mr-2 text-accent"></i>
+                  <a href="tel:+447951886027" class="hover:underline">+44 7951 886027</a>
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-map-marker-alt mr-2 text-accent"></i>
+                  Bridgend, South Wales, UK
+                </li>
+              </ul>
+            
+              <!-- Social Icons Section -->
+              <div class="flex justify-center space-x-6 mt-4 text-2xl text-primary">
+                <a href="https://www.linkedin.com/in/tom-bower-30056864/" target="_blank" class="hover:text-accent">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/tom-bower" target="_blank" class="hover:text-accent">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            
 
-        <div class="w-full">
-          <h2 class="text-lg font-semibold bg-primary text-white py-1 px-4 rounded-full inline-block mb-3">Contact</h2>
-          <div class="space-y-2 text-gray-500 dark:text-gray-400">
-            <p class="flex items-center"><i class="fas fa-envelope mr-2 text-accent"></i> bower.t@protonmail.com</p>
-            <p class="flex items-center"><i class="fas fa-phone mr-2 text-accent"></i> +44 7951 886027</p>
-            <p class="flex items-center"><i class="fas fa-map-marker-alt mr-2 text-accent"></i> Bridgend, South Wales, UK</p>
-          </div>
-        </div>
-
-        <div class="w-full">
-          <h2 class="text-lg font-semibold bg-primary text-white py-1 px-4 rounded-full inline-block mb-3">Skills</h2>
-          <ul class="grid grid-cols-2 gap-2 text-gray-500 dark:text-gray-400 text-sm">
-            <li>Python</li><li>Flutter</li><li>Full stack + API</li><li>Enterprise integration</li>
-            <li>Docker</li><li>Testing</li><li>FORTRAN90</li><li>MATLAB</li>
-            <li>MathCAD</li><li>HTML/CSS/Tailwind</li><li>NodeJS</li><li>MongoDB</li>
-            <li>SQL variants</li><li>LUSAS</li><li>Topbraid</li><li>Revit/AutoCAD</li>
-            <li>SketchUp</li><li>LATEX</li><li>Prezi</li><li>MS Office</li>
-            <li>Linux</li><li>Time management</li><li>Teamwork</li><li>Project management</li>
-          </ul>
+            <div class="w-full">
+            <h2 class="text-lg font-semibold bg-primary text-white my-3 py-1 px-4 rounded-full inline-block mb-3">Skills</h2>
+            <ul class="grid grid-cols-2 gap-2 text-gray-500 dark:text-gray-400 text-sm">
+                <li>Python</li><li>Flutter</li><li>Full stack + API</li><li>Enterprise integration</li>
+                <li>Docker</li><li>Testing</li><li>FORTRAN90</li><li>MATLAB</li>
+                <li>MathCAD</li><li>HTML/CSS/Tailwind</li><li>NodeJS</li><li>MongoDB</li>
+                <li>SQL variants</li><li>LUSAS</li><li>Topbraid</li><li>Revit/AutoCAD</li>
+                <li>SketchUp</li><li>LATEX</li><li>Prezi</li><li>MS Office</li>
+                <li>Linux</li><li>Time management</li><li>Teamwork</li><li>Project management</li>
+            </ul>
+            </div>
         </div>
       </aside>
 
@@ -111,7 +135,7 @@
               <span class="bg-primary text-white py-1 px-3 rounded-full text-sm mt-2 sm:mt-0">July 2021 - present</span>
             </div>
             <p class="font-semibold py-2">Weaver Labs,  London</p>
-            <ul class="list-disc list-inside text-gray-500 dark:text-gray-400 ml-4">
+            <ul class="list-disc list-inside text-gray-500 dark:text-gray-400">
                 <li>Telecoms sector</li>
                 <li>Engaged in groundbreaking research endeavors alongside academic and industry collaborators.</li>
                 <li>Designing software</li>
@@ -260,13 +284,14 @@
 
           <div class="space-y-2">
             <h3 class="text-xl font-semibold">MEng in Civil Engineering 1<sup>st</sup> class honours</h3>
-            <p class="text-gray-500 dark:text-gray-400">Cardiff University, 2013 - 2017</p>
+            <p class="text-gray-500 dark:text-gray-400">Cardiff University, 2009 - 2013</p>
           </div>
           
           <hr class="border-t border-gray-300 dark:border-gray-700">
 
           <div class="space-y-2">
-            <h3 class="text-xl font-semibold">A-levels, The Hemel Hempstead School</h3>
+            <h3 class="text-xl font-semibold">A-levels</h3>
+            <p class="text-gray-500 dark:text-gray-400">The Hemel Hempstead School, 2002 - 2009</p>
             <ul class="list-disc list-inside mt-2 text-gray-500 dark:text-gray-400">
                 <li>Mathematics: <b>A</b></li>
                 <li>Further Mathematics: <b>B</b></li>
@@ -277,45 +302,100 @@
           </div>
         </div>
 
+        <!-- Publication Section -->
+        <div class="light:bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg space-y-6">
+          <div class="flex items-center gap-2 mb-4">
+            <i class="fas fa-book text-primary text-2xl"></i>
+            <h2 class="text-2xl font-bold text-primary">Publications</h2>
+          </div>
+
+          <div class="space-y-2">
+            <p class="text-gray-500 dark:text-gray-400">Madhukumar, H., Bower, T. A., Vasilakos, X., Ullauri, J. P., Lema, M and Simeonidou, D, 2024. A Scalable and Distributed Hierarchical Architecture for Network Monitoring-on-Demand. 3<sup>rd</sup> International Conference on 6G Networking (6GNet), Paris, France pp. 63-68, doi: 10.1109/6GNet63182.2024.10765622.
+              <a href="https://ieeexplore.ieee.org/abstract/document/10765622" target="_blank" class="ml-2 text-gray-500 hover:text-gray-700">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </p>
+          </div>
+          
+          <hr class="border-t border-gray-300 dark:border-gray-700">
+
+          <div class="space-y-2">
+            <p class="text-gray-500 dark:text-gray-400">Breher, K., Terry, L., Bower, T., and Wahl, S. 2020. Choroidal Biomarkers: A Repeatability and Topographical Comparison of Choroidal Thickness and Choroidal Vascularity Index in Healthy Eyes. Translational Vision Science & Technology 9(8), pp. 11-29. (doi: 10.1167/tvst.9.11.8)
+              <a href="https://tvst.arvojournals.org/article.aspx?articleid=2770893" target="_blank" class="ml-2 text-gray-500 hover:text-gray-700">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </p>
+          </div>
+          
+          <hr class="border-t border-gray-300 dark:border-gray-700">
+
+          <div class="space-y-2">
+            <p class="text-gray-500 dark:text-gray-400">Bower, T. A., Jefferson, A. D. and Cleall, P. J. 2020. A reformulated hardening soil model. Proceedings of the ICE - Engineering and Computational Mechanics 173(1), pp. 11-29. (10.1680/jencm.18.00054)
+              <a href="https://www.icevirtuallibrary.com/doi/full/10.1680/jencm.18.00054" target="_blank" class="ml-2 text-gray-500 hover:text-gray-700">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </p>
+          </div>
+          
+          <hr class="border-t border-gray-300 dark:border-gray-700">
+
+          <div class="space-y-2">
+            <p class="text-gray-500 dark:text-gray-400">Bower, T., Jefferson, A. D., Cleall, P. and Lyons, P. 2016. Modelling soil-fibre composite behaviour using a micromechanical approach. Presented at: 7th European Congress on Computational Methods in Applied Sciences and Engineering, Crete, Greece, 5 - 10 June 2016.
+              <a href="https://orca.cardiff.ac.uk/id/eprint/95826/" target="_blank" class="ml-2 text-gray-500 hover:text-gray-700">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </p>
+          </div>
+          
+          <hr class="border-t border-gray-300 dark:border-gray-700">
+
+          <div class="space-y-2">
+            <p class="text-gray-500 dark:text-gray-400">Bower, T., Jefferson, A. D., Cleall, P. and Lyons, P. 2016. A micro-mechanics based soil-fibre composite model for use with finite element analysis. Presented at: UK Conference of the Association for Computational Mechanics in Engineering, Cardiff, UK, 31 March - 01 April 2016.
+              <a href="https://orca.cardiff.ac.uk/id/eprint/95825/" target="_blank" class="ml-2 text-gray-500 hover:text-gray-700">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </p>
+          </div>
+
+        </div>
+
 
         <!-- Awards Section -->
         <div class="light:bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg space-y-6">
-            <div class="flex items-center gap-2 mb-4">
-              <i class="fas fa-award text-primary text-2xl"></i>
-              <h2 class="text-2xl font-bold text-primary">Awards</h2>
-            </div>
+          <div class="flex items-center gap-2 mb-4">
+            <i class="fas fa-award text-primary text-2xl"></i>
+            <h2 class="text-2xl font-bold text-primary">Awards</h2>
+          </div>
   
-            <div class="space-y-2">
-                <p class="text-gray-500 dark:text-gray-400">
-                    Institute of Civil Engineers - Telford Premium Award - for paper: A reformulated hardening soil model
+          <div class="space-y-2">
+            <p class="text-gray-500 dark:text-gray-400">
+              Institute of Civil Engineers - Telford Premium Award - for paper: A reformulated hardening soil model
                     <a href="https://www.icevirtuallibrary.com/page/authors/awards-2021" target="_blank" class="ml-2 text-gray-500 hover:text-gray-700">
                         <i class="fas fa-external-link-alt"></i>
                     </a>
-                </p>
-            </div>
-            
-            
-          </div>
+            </p>
+          </div>      
+        </div>
 
         <!-- Hobbies Section -->
         <div class="light:bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg space-y-6">
-            <div class="flex items-center gap-2 mb-4">
-              <i class="fas fa-heart text-primary text-2xl"></i>
-              <h2 class="text-2xl font-bold text-primary">Hobbies</h2>
-            </div>
-  
-            <div class="space-y-2">
-                <ul class="list-disc list-inside mt-2 text-gray-500 dark:text-gray-400">
-                    <li>Carpentry and woodworking</li>
-                    <li>Piano, bass guitar, electric guitar, banjo, mandolin, harmonica</li>
-                    <li>Table tennis</li>
-                    <li>Cycling</li>
-                    <li>Hiking</li>
-                    <li>Surfing, bodyboarding, skateboarding, snowboarding</li>
-                    <li>Duke of Edinburgh Gold award</li>
-                </ul>
-            </div>
+          <div class="flex items-center gap-2 mb-4">
+            <i class="fas fa-heart text-primary text-2xl"></i>
+            <h2 class="text-2xl font-bold text-primary">Hobbies</h2>
           </div>
+  
+          <div class="space-y-2">
+            <ul class="list-disc list-inside mt-2 text-gray-500 dark:text-gray-400">
+              <li>Carpentry and woodworking</li>
+              <li>Piano, bass guitar, electric guitar, banjo, mandolin, harmonica</li>
+              <li>Table tennis</li>
+              <li>Cycling</li>
+              <li>Hiking</li>
+              <li>Surfing, bodyboarding, skateboarding, snowboarding</li>
+              <li>Duke of Edinburgh Gold award</li>
+            </ul>
+          </div>
+        </div>
       </section>
     </div>
   </main>
