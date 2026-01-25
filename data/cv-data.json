@@ -5,7 +5,7 @@
     "location": "Bridgend, South Wales, UK",
     "email": "bower.t@protonmail.com",
     "phone": "+44 7951 886027",
-    "summary": "Seasoned software developer with more than 12 years of experience. Committed to providing high-level solutions that drive business and provide outstanding cost efficiency. Seeking an exciting position with the responsibility of mentoring and training others in best practices.",
+    "summary": "Senior software developer with 12+ years of experience architecting scalable systems and leading technical initiatives. Proven track record of mentoring teams, delivering enterprise 5G solutions, and driving technical strategy across complex distributed systems. Seeking Principal Engineer opportunities to leverage deep technical expertise and leadership experience.",
     "social": [
       {
         "name": "LinkedIn",
@@ -20,12 +20,19 @@
     ]
   },
   "skills": [
+    "System architecture",
+    "Technical leadership",
+    "Agile methodologies",
+    "Mentoring and training",
+    "Microservice architecture",
+    "CI/CD pipeline design",
+    "RESTful API design",
+    "Cross-functional team collaboration",
     "Python",
     "Flutter",
     "Full stack + API",
     "Docker",
     "Testing",
-    "FORTRAN90",
     "MATLAB",
     "MathCAD",
     "HTML/CSS/Tailwind",
@@ -33,6 +40,7 @@
     "MongoDB",
     "SQL variants",
     "LUSAS",
+    "FORTRAN90",
     "Topbraid",
     "Revit/AutoCAD",
     "SketchUp",
@@ -40,8 +48,6 @@
     "Prezi",
     "MS Office",
     "Linux",
-    "Time management",
-    "Teamwork",
     "Project management",
     "Enterprise integration patterns"
   ],
@@ -55,14 +61,14 @@
       "icon": "fas fa-laptop-code",
       "highlights": [
         "Telecoms sector - B2B private 5G Network as a Service provider in commercial and research sectors",
-        "Contributed to systems architecture, design and implementation",
+        "Architected a distributed monitoring system for 5G networks using WireMQ, Prometheus, InfluxDB, Grafana, Docker, K8s - Used in 2 private 5G installations",
+        "Mentored 4+ PhD and Masters students in coding best practices, design-patterns, repo management, security, and testing",
+        "Architected and delivered a full stack solution for fan engagement to at a football stadium to promote the use of a private 5G network, including mobile app development",
+        "Contributed to architecture and UX for upgrade from proof of concept to production of the stadium's private 5G network",
+        "Undertook role as a cybersecurity specialist for project REASON+ during open sourcing of the project, implemented security policy, CI/CD jobs for automating tests and code compliance checks",
         "Primarily working in Python, but also Javascript frameworks including NodeJS and NextJS",
-        "Working using AGILE framework, using an incorporated CI approach to repository management",
-        "Development of an asynchronous socket communication Python library - WireMQ",
-        "Contributed to project REASON, delivered a distributed monitoring system for 5G network components using WireMQ, Prometheus, InfluxDB, Grafana, Docker, K8s",
-        "Contributed to project ARANA, delivered a full stack solution for fan engagement to promote the use of the private 5G network, including mobile app development",
-        "Contributed to project REASON+ as a cybersecurity specialist, implemented security policy, CI/CD jobs for automating tests and code compliance checks",
-        "Contributing to project ARANA+, where I am responsible for upgrading from a proof of concept to a production grade fan engagement mobile app"
+        "Working using AGILE framework, using an incorporated CI/CD approach to repository management",
+        "Development of an asynchronous socket communication Python library - WireMQ"
       ]
     },
     {
