@@ -1,0 +1,609 @@
+/* Static CV Styling */
+
+:root {
+  --primary: #4f46e5;
+  --secondary: #6366f1;
+  --accent: #a78bfa;
+  --dark-bg: #0f172a;
+  --dark-text: #f1f5f9;
+  --light-bg: #ffffff;
+  --light-text: #1e293b;
+  --border: #e2e8f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  background-color: var(--light-bg);
+  color: var(--light-text);
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: white;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  flex: 1;
+}
+
+.header-controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.pdf-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: white;
+  color: var(--primary);
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.pdf-download:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dark-mode-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.dark-mode-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+body.dark-mode .sidebar {
+  background-color: #1e293b;
+  color: var(--dark-text);
+  border-color: #334155;
+}
+
+body.dark-mode section {
+  background-color: #1e293b;
+  color: var(--dark-text);
+  border-color: #334155;
+}
+
+body.dark-mode section h2 {
+  color: var(--accent);
+}
+
+body.dark-mode .job-title,
+body.dark-mode .job-title-company,
+body.dark-mode .edu-degree {
+  color: var(--dark-text);
+}
+
+body.dark-mode .job-company,
+body.dark-mode .edu-institution,
+body.dark-mode .summary,
+body.dark-mode .job-dates,
+body.dark-mode .contact-list li,
+body.dark-mode .education-details li,
+body.dark-mode .publications-list p,
+body.dark-mode .awards-list p,
+body.dark-mode .job-highlights li {
+  color: #cbd5e1;
+}
+
+body.dark-mode .skills-list li,
+body.dark-mode .hobbies-list li {
+  background-color: #334155;
+  color: #cbd5e1;
+  border-color: #475569;
+}
+
+body.dark-mode .hobbies-list li i {
+  color: var(--accent);
+}
+
+body.dark-mode .hobbies-list li:hover {
+  border-color: var(--accent);
+  background-color: rgba(167, 139, 250, 0.1);
+}
+
+body.dark-mode .hobbies-list li:hover i {
+  color: #e0aaff;
+}
+
+body.dark-mode .skills-list li {
+  border-left-color: var(--accent);
+}
+
+body.dark-mode .footer {
+  background-color: #0f172a;
+  color: #94a3b8;
+  border-top-color: #334155;
+}
+
+/* Main Layout */
+.cv-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.sidebar {
+  background-color: #f8fafc;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  height: fit-content;
+  sticky: top;
+  top: 2rem;
+  border: 1px solid var(--border);
+}
+
+/* Profile Image */
+.profile-image-section {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--primary);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2);
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Sections */
+section {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  border: 1px solid var(--border);
+}
+
+section h2 {
+  color: var(--primary);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary);
+}
+
+/* Profile & Contact */
+.profile-section {
+  margin-bottom: 1.5rem;
+}
+
+.summary {
+  color: #64748b;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+.contact-section,
+.skills-section {
+  margin-bottom: 1.5rem;
+}
+
+.contact-list {
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.contact-list i {
+  color: var(--primary);
+  width: 20px;
+  text-align: center;
+}
+
+.contact-list a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.social-link {
+  color: var(--primary);
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  color: var(--accent);
+  transform: translateY(-3px);
+}
+
+/* Skills */
+.skills-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+
+.skills-list li {
+  background-color: #f1f5f9;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.85rem;
+  color: #475569;
+  border-left: 3px solid var(--primary);
+}
+
+/* Experience */
+.job-card {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+
+}
+
+.job-card:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.2rem;
+  gap: 1rem;
+}
+
+.job-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--light-text);
+}
+
+.job-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.job-company {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--light-text);
+  margin: 0;
+}
+
+.job-dates {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.job-highlights {
+  list-style: disc;
+  margin-left: 1.5rem;
+  color: #475569;
+  font-size: 0.9rem;
+}
+
+.job-highlights li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Education */
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.education-item {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.education-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.edu-degree {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--light-text);
+  margin-bottom: 0.25rem;
+}
+
+.edu-institution {
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.education-details {
+  list-style: disc;
+  margin-left: 1.5rem;
+  margin-top: 0.75rem;
+  color: #475569;
+  font-size: 0.85rem;
+}
+
+.education-details li {
+  margin-bottom: 0.25rem;
+}
+
+/* Publications */
+.publications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.publications-list p {
+  font-size: 0.9rem;
+  color: #475569;
+  line-height: 1.7;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.publications-list p:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.pub-link {
+  color: var(--primary);
+  text-decoration: none;
+  margin-left: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.pub-link:hover {
+  color: var(--accent);
+}
+
+/* Awards */
+.awards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.awards-list p {
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.award-link {
+  color: var(--primary);
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+
+.award-link:hover {
+  color: var(--accent);
+}
+
+/* Hobbies */
+.hobbies-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.hobbies-list li {
+  background-color: #f1f5f9;
+  padding: 0.75rem 1rem;
+  border-radius: 0.375rem;
+  font-size: 0.9rem;
+  color: #475569;
+  text-align: center;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 120px;
+}
+
+.hobbies-list li i {
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+.hobbies-list li:hover {
+  border-color: var(--primary);
+  background-color: rgba(79, 70, 229, 0.05);
+  transform: translateY(-2px);
+}
+
+.hobbies-list li:hover i {
+  color: var(--accent);
+}
+
+/* Footer */
+.footer {
+  background-color: #f8fafc;
+  color: #64748b;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.85rem;
+}
+
+.footer a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header h1 {
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .header-controls {
+    width: 100%;
+  }
+
+  .cv-container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .sidebar {
+    sticky: unset;
+    top: unset;
+  }
+
+  .job-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .job-dates {
+    white-space: normal;
+  }
+
+  .hobbies-list {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+}
+
+/* Print Styles */
+@media print {
+  .header-controls,
+  .footer {
+    display: none;
+  }
+
+  body {
+    background-color: white;
+  }
+
+  section {
+    page-break-inside: avoid;
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid #ccc;
+  }
+
+  section h2 {
+    page-break-after: avoid;
+  }
+
+  .cv-container {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    padding: 0;
+    gap: 0;
+  }
+
+  .sidebar {
+    page-break-after: avoid;
+    background: white;
+    border: none;
+    padding: 0 0 1rem 0;
+  }
+
+  .main-content {
+    gap: 1rem;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}

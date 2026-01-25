@@ -1,0 +1,248 @@
+{
+  "personal": {
+    "name": "Thomas Bower",
+    "title": "Senior Software Developer",
+    "location": "Bridgend, South Wales, UK",
+    "email": "bower.t@protonmail.com",
+    "phone": "+44 7951 886027",
+    "summary": "Seasoned software developer with more than 12 years of experience. Committed to providing high-level solutions that drive business and provide outstanding cost efficiency. Seeking an exciting position with the responsibility of mentoring and training others in best practices.",
+    "social": [
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/tom-bower-30056864/",
+        "icon": "fab fa-linkedin"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/tom-bower",
+        "icon": "fab fa-github"
+      }
+    ]
+  },
+  "skills": [
+    "Python",
+    "Flutter",
+    "Full stack + API",
+    "Docker",
+    "Testing",
+    "FORTRAN90",
+    "MATLAB",
+    "MathCAD",
+    "HTML/CSS/Tailwind",
+    "NodeJS",
+    "MongoDB",
+    "SQL variants",
+    "LUSAS",
+    "Topbraid",
+    "Revit/AutoCAD",
+    "SketchUp",
+    "LATEX",
+    "Prezi",
+    "MS Office",
+    "Linux",
+    "Time management",
+    "Teamwork",
+    "Project management",
+    "Enterprise integration patterns"
+  ],
+  "experience": [
+    {
+      "title": "Senior Software Developer",
+      "company": "Weaver Labs",
+      "location": "London",
+      "startDate": "July 2021",
+      "endDate": "present",
+      "icon": "fas fa-laptop-code",
+      "highlights": [
+        "Telecoms sector - B2B private 5G Network as a Service provider in commercial and research sectors",
+        "Contributed to systems architecture, design and implementation",
+        "Primarily working in Python, but also Javascript frameworks including NodeJS and NextJS",
+        "Working using AGILE framework, using an incorporated CI approach to repository management",
+        "Development of an asynchronous socket communication Python library - WireMQ",
+        "Contributed to project REASON, delivered a distributed monitoring system for 5G network components using WireMQ, Prometheus, InfluxDB, Grafana, Docker, K8s",
+        "Contributed to project ARANA, delivered a full stack solution for fan engagement to promote the use of the private 5G network, including mobile app development",
+        "Contributed to project REASON+ as a cybersecurity specialist, implemented security policy, CI/CD jobs for automating tests and code compliance checks",
+        "Contributing to project ARANA+, where I am responsible for upgrading from a proof of concept to a production grade fan engagement mobile app"
+      ]
+    },
+    {
+      "title": "Woodworking",
+      "company": "Self-employed",
+      "location": "Bridgend",
+      "startDate": "January 2015",
+      "endDate": "present",
+      "icon": "fas fa-toolbox",
+      "highlights": [
+        "Creating wooden crafts including picture frames, clocks, furniture, and jewellery",
+        "Selling crafts online",
+        "Customer engagement with bespoke orders"
+      ]
+    },
+    {
+      "title": "Research Associate",
+      "company": "Cardiff University",
+      "location": "Cardiff",
+      "startDate": "January 2019",
+      "endDate": "July 2021",
+      "icon": "fas fa-flask",
+      "highlights": [
+        "Improved collaboration of research group by implementing shared codebases on GitLab",
+        "Improved modularity and maintanability of codebase by splitting large components into RESTful microservices deployed using Docker Swarm",
+        "Reduced maintenance workload of microservices by automating TLS certificate generation and automating API documentation generation",
+        "Automation in compliance for building information modelling standards",
+        "Communication with industrial partners",
+        "Mapping and coding of compliance standards for construction projects",
+        "Designing and implementing systems for automatic compliance checking using ontology",
+        "Natural language processing and fuzzy logic",
+        "Increased awareness of project and ideas with Conference attendance and article publication"
+      ]
+    },
+    {
+      "title": "Software engineer",
+      "company": "LUSAS",
+      "location": "London",
+      "startDate": "January 2016",
+      "endDate": "January 2019",
+      "icon": "fas fa-laptop-code",
+      "highlights": [
+        "Delivered soil structural modelling algorithms, allowing the company to expand into the geotechnical market",
+        "Conducted primary experimental data to validate the algorithms, giving customers assurance of model accuracy",
+        "Introduced a new method to derive soil parameters, making the user experience easier",
+        "Coding in FORTRAN90 following the company's style guide",
+        "Documentation of code and results",
+        "Integrated with non-linear Newton-Raphson algorithm and iterative approach to converge on stable solutions",
+        "Identifying convergence issues and optimising boundary conditions"
+      ]
+    },
+    {
+      "title": "Cycle Courier",
+      "company": "Deliveroo",
+      "location": "Cardiff",
+      "startDate": "January 2016",
+      "endDate": "January 2019",
+      "icon": "fas fa-bicycle",
+      "highlights": [
+        "Customer and client facing role",
+        "Road safety and route planning",
+        "Public engagement via online blog"
+      ]
+    },
+    {
+      "title": "KTP Associate",
+      "company": "Cardiff University / LUSAS",
+      "location": "Cardiff / London",
+      "startDate": "January 2013",
+      "endDate": "January 2016",
+      "icon": "fas fa-industry",
+      "highlights": [
+        "Knowledge Transfer Partnerships facilitate the transfer of research from academic institutions directly into industry.",
+        "Literature review of subject area",
+        "Development of two advanced soil models: Duncan-Chang and Hardening Soil for use in LUSAS Finite Element Analysis software",
+        "Development of a new soil-fibre micro-mechanical model",
+        "Presenting at national and international conferences",
+        "Supervising two MSc students and ensuring reliable experimental data",
+        "Managing budget and training",
+        "Teaching and assessing 4th year undergraduate programming course"
+      ]
+    },
+    {
+      "title": "Computer Technician",
+      "company": "Self-employed",
+      "location": "Hemel Hempstead",
+      "startDate": "2012",
+      "endDate": "2019",
+      "icon": "fas fa-virus",
+      "highlights": [
+        "Established a small computer repair business. This involved market research, advertising, and client tuition."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "PhD: Constitutive Modelling of Soils and Fibre-Reinforced Soils",
+      "institution": "Cardiff University",
+      "years": "2013 - 2017"
+    },
+    {
+      "degree": "MEng in Civil Engineering 1st class honours",
+      "institution": "Cardiff University",
+      "years": "2009 - 2013"
+    },
+    {
+      "degree": "A-levels",
+      "institution": "The Hemel Hempstead School",
+      "years": "2002 - 2009",
+      "details": [
+        { "subject": "Mathematics", "grade": "A" },
+        { "subject": "Further Mathematics", "grade": "B" },
+        { "subject": "Information Technology", "grade": "A" },
+        { "subject": "Physics", "grade": "B" },
+        { "subject": "Music Technology", "grade": "A" }
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "authors": "Madhukumar, H., Bower, T. A., Vasilakos, X., Ullauri, J. P., Lema, M and Simeonidou, D",
+      "year": "2024",
+      "title": "A Scalable and Distributed Hierarchical Architecture for Network Monitoring-on-Demand",
+      "venue": "3rd International Conference on 6G Networking (6GNet), Paris, France",
+      "pages": "pp. 63-68",
+      "doi": "10.1109/6GNet63182.2024.10765622",
+      "url": "https://ieeexplore.ieee.org/abstract/document/10765622"
+    },
+    {
+      "authors": "Breher, K., Terry, L., Bower, T., and Wahl, S.",
+      "year": "2020",
+      "title": "Choroidal Biomarkers: A Repeatability and Topographical Comparison of Choroidal Thickness and Choroidal Vascularity Index in Healthy Eyes",
+      "venue": "Translational Vision Science & Technology",
+      "volume": "9",
+      "issue": "8",
+      "pages": "pp. 11-29",
+      "doi": "10.1167/tvst.9.11.8",
+      "url": "https://tvst.arvojournals.org/article.aspx?articleid=2770893"
+    },
+    {
+      "authors": "Bower, T. A., Jefferson, A. D. and Cleall, P. J.",
+      "year": "2020",
+      "title": "A reformulated hardening soil model",
+      "venue": "Proceedings of the ICE - Engineering and Computational Mechanics",
+      "volume": "173",
+      "issue": "1",
+      "pages": "pp. 11-29",
+      "doi": "10.1680/jencm.18.00054",
+      "url": "https://www.icevirtuallibrary.com/doi/full/10.1680/jencm.18.00054"
+    },
+    {
+      "authors": "Bower, T., Jefferson, A. D., Cleall, P. and Lyons, P.",
+      "year": "2016",
+      "title": "Modelling soil-fibre composite behaviour using a micromechanical approach",
+      "venue": "7th European Congress on Computational Methods in Applied Sciences and Engineering, Crete, Greece, 5 - 10 June 2016",
+      "url": "https://orca.cardiff.ac.uk/id/eprint/95826/"
+    },
+    {
+      "authors": "Bower, T., Jefferson, A. D., Cleall, P. and Lyons, P.",
+      "year": "2016",
+      "title": "A micro-mechanics based soil-fibre composite model for use with finite element analysis",
+      "venue": "UK Conference of the Association for Computational Mechanics in Engineering, Cardiff, UK, 31 March - 01 April 2016",
+      "url": "https://orca.cardiff.ac.uk/id/eprint/95825/"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Institute of Civil Engineers - Telford Premium Award",
+      "description": "for paper: A reformulated hardening soil model",
+      "url": "https://web.archive.org/web/20250517220625/https://www.icevirtuallibrary.com/page/authors/awards-2021"
+    }
+  ],
+  "hobbies": [
+    { "name": "Carpentry and woodworking", "icon": "fas fa-hammer" },
+    { "name": "Piano, organ, bass guitar, electric guitar, banjo, mandolin, harmonica", "icon": "fas fa-guitar" },
+    { "name": "Table tennis", "icon": "fas fa-table-tennis" },
+    { "name": "Cycling", "icon": "fas fa-bicycle" },
+    { "name": "Hiking", "icon": "fas fa-person-hiking" },
+    { "name": "Surfing, bodyboarding, skateboarding, snowboarding", "icon": "fas fa-person-snowboarding" },
+    { "name": "Duke of Edinburgh Gold award", "icon": "fas fa-award" },
+    { "name": "Footpath clearing with the Pencoed Trailblazers", "icon": "fas fa-people-group" }
+  ]
+}
