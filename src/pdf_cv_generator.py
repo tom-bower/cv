@@ -109,16 +109,18 @@ class PdfCvGenerator(AbstractCvGenerator):
         # Only include name and contact info if not anonymous
         if not self.anonymous:
             self.content += (
-                r"{\Large \textbf{" + self.escape_text(personal['name']) + r"}}\\" + "\n"
-                r"\vspace{0.1cm}" + "\n"
+                r"{\Large \textbf{Curriculum Vitae --- " + self.escape_text(personal['name']) + r"}}\\" + "\n"
+                r"\vspace{0.2cm}" + "\n"
                 r"{\small " + self.escape_text(personal['email']) + r" $|$ " +
                 self.escape_text(personal['phone']) + r" $|$ " +
                 self.escape_text(personal['location']) + r"}\\" + "\n"
                 r"\vspace{0.15cm}" + "\n"
-                r"\hrule" + "\n"
             )
+        else:
+            self.content += r"{\Large \textbf{Curriculum Vitae}}\\" + "\n" + r"\vspace{0.2cm}" + "\n"
         
         self.content += (
+            r"\hrule" + "\n"
             r"\end{center}" + "\n"
             "\n"
         )

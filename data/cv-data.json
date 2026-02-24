@@ -5,7 +5,7 @@
     "location": "Bridgend, South Wales, UK",
     "email": "bower.t@protonmail.com",
     "phone": "+44 7951 886027",
-    "summary": "Senior software developer with 12+ years of experience architecting scalable systems and leading technical initiatives. Proven track record of mentoring teams, delivering enterprise 5G solutions, and driving technical strategy across complex distributed systems. Seeking Senior or Principal Engineer opportunities to leverage deep technical expertise and leadership experience.",
+    "summary": "Established senior software developer with over a decade of experience architecting scalable systems and leading technical initiatives. Proven track record of mentoring teams, delivering enterprise 5G solutions, and driving technical strategy across complex distributed systems. Seeking Senior or Principal Engineer opportunities to leverage deep technical expertise and leadership experience.",
     "social": [
       {
         "name": "LinkedIn",
@@ -61,9 +61,9 @@
       "icon": "fas fa-laptop-code",
       "highlights": [
         "Telecoms sector - B2B private 5G Network as a Service provider in commercial and research sectors",
-        "Architected a distributed monitoring system for 5G networks using WireMQ, Prometheus, InfluxDB, Grafana, Docker, K8s - Used in 2 private 5G installations",
-        "Mentored 4+ PhD and Masters students in coding best practices, design-patterns, repo management, security, and testing",
-        "Architected and delivered a full stack solution for fan engagement to at a football stadium to promote the use of a private 5G network, including mobile app development",
+        "Designed architecture for a distributed monitoring system for 5G networks using WireMQ, Prometheus, InfluxDB, Grafana, Docker, K8s - Used in two private 5G installations",
+        "Mentored several PhD and Masters students in coding best practices, design-patterns, repository management, security, and testing",
+        "Led development of, and designed architecture for a full stack mobile solution for fan engagement at a football stadium to promote the use of a private 5G network",
         "Contributed to architecture and UX for upgrade from proof of concept to production of the stadium's private 5G network",
         "Undertook role as a cybersecurity specialist for project REASON+ during open sourcing of the project, implemented security policy, CI/CD jobs for automating tests and code compliance checks",
         "Primarily working in Python, but also Javascript frameworks including NodeJS and NextJS",
@@ -83,11 +83,9 @@
         "Improved modularity and maintanability of codebase by splitting large components into RESTful microservices deployed using Docker Swarm",
         "Reduced maintenance workload of microservices by automating TLS certificate generation and automating API documentation generation",
         "Automation in compliance for building information modelling standards",
-        "Communication with industrial partners",
-        "Mapping and coding of compliance standards for construction projects",
+        "Liaising with industrial partners and managing expectations",
         "Designing and implementing systems for automatic compliance checking using ontology",
-        "Natural language processing and fuzzy logic",
-        "Increased awareness of project and ideas with Conference attendance and article publication"
+        "Stakeholder engagement and dissemination of research through conference presentations and publications"
       ]
     },
     {
@@ -98,13 +96,9 @@
       "endDate": "January 2019",
       "icon": "fas fa-laptop-code",
       "highlights": [
-        "Delivered soil structural modelling algorithms, allowing the company to expand into the geotechnical market",
-        "Conducted primary experimental data to validate the algorithms, giving customers assurance of model accuracy",
-        "Introduced a new method to derive soil parameters, making the user experience easier",
-        "Coding in FORTRAN90 following the company's style guide",
-        "Documentation of code and results",
-        "Integrated with non-linear Newton-Raphson algorithm and iterative approach to converge on stable solutions",
-        "Identifying convergence issues and optimising boundary conditions"
+        "Delivered soil structural modelling algorithms (Duncan-Chang, Hardening Soil), enabling company expansion into the geotechnical market",
+        "Developed novel soil parameter derivation method and validated models through experimental data analysis",
+        "Implemented advanced numerical algorithms with iterative convergence techniques and boundary condition optimisation in FORTRAN90"
       ]
     },
     {
@@ -115,14 +109,10 @@
       "endDate": "January 2016",
       "icon": "fas fa-industry",
       "highlights": [
-        "Knowledge Transfer Partnerships facilitate the transfer of research from academic institutions directly into industry.",
-        "Literature review of subject area",
-        "Development of two advanced soil models: Duncan-Chang and Hardening Soil for use in LUSAS Finite Element Analysis software",
-        "Development of a new soil-fibre micro-mechanical model",
-        "Presenting at national and international conferences",
-        "Supervising two MSc students and ensuring reliable experimental data",
-        "Managing budget and training",
-        "Teaching and assessing 4th year undergraduate programming course"
+        "Developed two advanced soil models (Duncan-Chang and Hardening Soil) for LUSAS finite element analysis software, transferring research outcomes to industry",
+        "Developed soil-fibre micro-mechanical composite model for enhanced material characterisation",
+        "Supervised two MSc students, conducted literature review, and presented at national and international conferences",
+        "Taught and assessed 4th year undergraduate programming course"
       ]
     },
     {
