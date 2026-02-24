@@ -17,6 +17,17 @@ class PdfCvGenerator(AbstractCvGenerator):
     with appropriate LaTeX formatting.
     """
     
+    def __init__(self, anonymous=False):
+        """
+        Initialize the PDF CV generator.
+        
+        Parameters
+        ----------
+        anonymous : bool, optional
+            If True, generates an anonymized CV without personal name. Default is False.
+        """
+        super().__init__(anonymous)
+    
     def escape_text(self, text):
         """
         Escape special LaTeX characters.
@@ -93,13 +104,21 @@ class PdfCvGenerator(AbstractCvGenerator):
             "\n"
             r"% Header" + "\n"
             r"\begin{center}" + "\n"
-            r"{\Large \textbf{" + self.escape_text(personal['name']) + r"}}\\" + "\n"
-            r"\vspace{0.1cm}" + "\n"
-            r"{\small " + self.escape_text(personal['email']) + r" $|$ " +
-            self.escape_text(personal['phone']) + r" $|$ " +
-            self.escape_text(personal['location']) + r"}\\" + "\n"
-            r"\vspace{0.15cm}" + "\n"
-            r"\hrule" + "\n"
+        )
+        
+        # Only include name and contact info if not anonymous
+        if not self.anonymous:
+            self.content += (
+                r"{\Large \textbf{" + self.escape_text(personal['name']) + r"}}\\" + "\n"
+                r"\vspace{0.1cm}" + "\n"
+                r"{\small " + self.escape_text(personal['email']) + r" $|$ " +
+                self.escape_text(personal['phone']) + r" $|$ " +
+                self.escape_text(personal['location']) + r"}\\" + "\n"
+                r"\vspace{0.15cm}" + "\n"
+                r"\hrule" + "\n"
+            )
+        
+        self.content += (
             r"\end{center}" + "\n"
             "\n"
         )
@@ -319,7 +338,7 @@ class PdfCvGenerator(AbstractCvGenerator):
         
         self.content += (
             "\n"
-            r"\section*{AWARDS}" + "\n"
+            r"\section*{AWARDS AND ACCREDITATIONS}" + "\n"
             r"\vspace{-0.3cm}" + "\n"
             r"\hrule" + "\n"
             r"\vspace{0.2cm}" + "\n"
@@ -410,9 +429,13 @@ class PdfCvGenerator(AbstractCvGenerator):
         )
         
         if result.returncode == 0:
-            # Rename PDF to include name
+            # Rename PDF with name or anonymize
             source_pdf = Path('output') / 'cv.pdf'
-            target_pdf = Path('output') / 'CV - Tom Bower.pdf'
+            if self.anonymous:
+                target_pdf = Path('output') / 'CV - Anonymous.pdf'
+            else:
+                personal_name = self.cv_data['personal']['name']
+                target_pdf = Path('output') / f'CV - {personal_name}.pdf'
             if source_pdf.exists():
                 source_pdf.replace(target_pdf)
             print(f"✓ PDF generated successfully: {target_pdf}")

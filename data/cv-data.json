@@ -5,7 +5,7 @@
     "location": "Bridgend, South Wales, UK",
     "email": "bower.t@protonmail.com",
     "phone": "+44 7951 886027",
-    "summary": "Senior software developer with 12+ years of experience architecting scalable systems and leading technical initiatives. Proven track record of mentoring teams, delivering enterprise 5G solutions, and driving technical strategy across complex distributed systems. Seeking Principal Engineer opportunities to leverage deep technical expertise and leadership experience.",
+    "summary": "Senior software developer with 12+ years of experience architecting scalable systems and leading technical initiatives. Proven track record of mentoring teams, delivering enterprise 5G solutions, and driving technical strategy across complex distributed systems. Seeking Senior or Principal Engineer opportunities to leverage deep technical expertise and leadership experience.",
     "social": [
       {
         "name": "LinkedIn",
@@ -72,19 +72,6 @@
       ]
     },
     {
-      "title": "Woodworking",
-      "company": "Self-employed",
-      "location": "Bridgend",
-      "startDate": "January 2015",
-      "endDate": "present",
-      "icon": "fas fa-toolbox",
-      "highlights": [
-        "Creating wooden crafts including picture frames, clocks, furniture, and jewellery",
-        "Selling crafts online",
-        "Customer engagement with bespoke orders"
-      ]
-    },
-    {
       "title": "Research Associate",
       "company": "Cardiff University",
       "location": "Cardiff",
@@ -118,19 +105,6 @@
         "Documentation of code and results",
         "Integrated with non-linear Newton-Raphson algorithm and iterative approach to converge on stable solutions",
         "Identifying convergence issues and optimising boundary conditions"
-      ]
-    },
-    {
-      "title": "Cycle Courier",
-      "company": "Deliveroo",
-      "location": "Cardiff",
-      "startDate": "January 2016",
-      "endDate": "January 2019",
-      "icon": "fas fa-bicycle",
-      "highlights": [
-        "Customer and client facing role",
-        "Road safety and route planning",
-        "Public engagement via online blog"
       ]
     },
     {
@@ -236,17 +210,25 @@
   ],
   "awards": [
     {
-      "title": "Institute of Civil Engineers - Telford Premium Award",
+      "title": "Institute of Civil Engineers - Telford Premium Award - 2021",
       "description": "for paper: A reformulated hardening soil model",
       "url": "https://web.archive.org/web/20250517220625/https://www.icevirtuallibrary.com/page/authors/awards-2021"
+    },
+    {
+      "title": "Associate Fellow of Advance HE - 2020",
+      "description": "Accreditation for commitment to professionalism in higher education teaching and learning support",
+      "url": "https://www.advance-he.ac.uk/fellowship/associate-fellowship"
+    },
+    {
+      "title": "PRINCE2 Practitioner - 2015",
+      "description": "Accreditation for the PRINCE2 Project Management Framework",
+      "url": "https://www.prince2.com/uk/what-is-prince2"
     }
   ],
   "hobbies": [
     { "name": "Carpentry and woodworking", "icon": "fas fa-hammer" },
     { "name": "Piano, organ, bass guitar, electric guitar, banjo, mandolin, harmonica", "icon": "fas fa-guitar" },
-    { "name": "Table tennis", "icon": "fas fa-table-tennis" },
-    { "name": "Cycling", "icon": "fas fa-bicycle" },
-    { "name": "Hiking", "icon": "fas fa-person-hiking" },
+    { "name": "Table tennis, cycling, hiking", "icon": "fas fa-table-tennis" },
     { "name": "Surfing, bodyboarding, skateboarding, snowboarding", "icon": "fas fa-person-snowboarding" },
     { "name": "Duke of Edinburgh Gold award", "icon": "fas fa-award" },
     { "name": "Footpath clearing with the Pencoed Trailblazers", "icon": "fas fa-people-group" }

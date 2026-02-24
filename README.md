@@ -60,6 +60,9 @@ nano data/cv-data.json
 python generate_pdf.py      # Creates output/CV - Tom Bower.pdf
 python generate_html.py     # Creates index.html
 
+# Generate anonymized PDF (no personal name)
+python generate_pdf.py --anon  # Creates output/CV - Anonymous.pdf
+
 # Preview in browser
 open index.html             # macOS
 xdg-open index.html         # Linux
@@ -197,6 +200,13 @@ Edit `css/static-style.css`:
 - Colors: CSS variables in `:root`
 - Dark mode: `body.dark-mode` rules
 - Responsive: media queries at bottom
+
+### Anonymous CVs
+Generate an anonymized CV without your personal name:
+```bash
+python generate_pdf.py --anon
+```
+This creates `CV - Anonymous.pdf` with all content except the personal name in the header.
 
 ### Section Order
 Change the order in `src/abstract_cv_generator.py`'s `generate()` method by reordering these calls:

@@ -16,13 +16,14 @@ class AbstractCvGenerator(ABC):
     and writing output.
     """
     
-    def __init__(self):
+    def __init__(self, anonymous=False):
         """
         Initialize the CV generator.
         
         Parameters
         ----------
-        None
+        anonymous : bool, optional
+            If True, generates an anonymized CV without personal name. Default is False.
         
         Returns
         -------
@@ -30,6 +31,7 @@ class AbstractCvGenerator(ABC):
         """
         self.cv_data = None
         self.content = ""
+        self.anonymous = anonymous
     
     def load_cv_data(self):
         """
