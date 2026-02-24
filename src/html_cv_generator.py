@@ -14,6 +14,17 @@ class HtmlCvGenerator(AbstractCvGenerator):
     design with a sidebar for contact and skills.
     """
     
+    def __init__(self, anonymous=False):
+        """
+        Initialize the HTML CV generator.
+        
+        Parameters
+        ----------
+        anonymous : bool, optional
+            If True, generates an anonymized CV without personal name. Default is False.
+        """
+        super().__init__(anonymous)
+    
     def escape_text(self, text):
         """
         Escape HTML special characters.
@@ -95,8 +106,8 @@ class HtmlCvGenerator(AbstractCvGenerator):
             '  <header class="header">' + "\n"
             f"    <h1>{self.escape_text(personal['name'])}</h1>" + "\n"
             '    <div class="header-controls">' + "\n"
-            '      <a href="output/CV%20-%20Tom%20Bower.pdf" '
-            'class="pdf-download" download="CV - Tom Bower.pdf">'
+            '      <a href="output/CV%20-%20Thomas%20Bower.pdf" '
+            'class="pdf-download" download="CV - Thomas Bower.pdf">'
             '<i class="fas fa-file-pdf"></i> Download PDF</a>' + "\n"
             '      <button id="darkModeBtn" class="dark-mode-button" '
             'title="Toggle dark mode"><i class="fas fa-moon"></i></button>' + "\n"
@@ -350,7 +361,7 @@ class HtmlCvGenerator(AbstractCvGenerator):
         
         self.content += (
             '      <section class="awards-section">' + "\n"
-            "        <h2>Awards</h2>" + "\n"
+            "        <h2>Awards and Accreditations</h2>" + "\n"
             '        <div class="awards-list">' + "\n"
         )
         
