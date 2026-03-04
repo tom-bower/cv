@@ -173,6 +173,8 @@ class PdfCvGenerator(AbstractCvGenerator):
         )
         
         for job in self.cv_data['experience']:
+            if job.get('hideOnPdf', False):
+                continue
             self.content += (
                 r"\noindent" + "\n"
                 r"\textbf{" + self.escape_text(job['title']) + r"} \hfill {\small " +

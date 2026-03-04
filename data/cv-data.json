@@ -57,7 +57,7 @@
       "company": "Weaver Labs",
       "location": "London",
       "startDate": "July 2021",
-      "endDate": "present",
+      "endDate": "March 2026",
       "icon": "fas fa-laptop-code",
       "highlights": [
         "Telecoms sector - B2B private 5G Network as a Service provider in commercial and research sectors",
@@ -70,6 +70,20 @@
         "Working using AGILE framework, using an incorporated CI/CD approach to repository management",
         "Development of an asynchronous socket communication Python library - WireMQ"
       ]
+    },
+    {
+      "title": "Woodworking",
+      "company": "Self-employed",
+      "location": "Bridgend",
+      "startDate": "January 2015",
+      "endDate": "present",
+      "icon": "fas fa-toolbox",
+      "highlights": [
+        "Creating wooden crafts including picture frames, clocks, furniture, and jewellery",
+        "Selling crafts online",
+        "Customer engagement with bespoke orders"
+      ],
+      "hideOnPdf": true
     },
     {
       "title": "Research Associate",
@@ -87,6 +101,20 @@
         "Designing and implementing systems for automatic compliance checking using ontology",
         "Stakeholder engagement and dissemination of research through conference presentations and publications"
       ]
+    },
+    {
+      "title": "Cycle Courier",
+      "company": "Deliveroo",
+      "location": "Cardiff",
+      "startDate": "January 2016",
+      "endDate": "January 2019",
+      "icon": "fas fa-bicycle",
+      "highlights": [
+        "Customer and client facing role",
+        "Road safety and route planning",
+        "Public engagement via online blog"
+      ],
+      "hideOnPdf": true
     },
     {
       "title": "Software engineer",
@@ -120,7 +148,7 @@
       "company": "Self-employed",
       "location": "Hemel Hempstead",
       "startDate": "2012",
-      "endDate": "2019",
+      "endDate": "2015",
       "icon": "fas fa-virus",
       "highlights": [
         "Established a small computer repair business. This involved market research, advertising, and client tuition."
