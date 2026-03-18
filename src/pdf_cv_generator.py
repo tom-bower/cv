@@ -474,6 +474,9 @@ class PdfCvGenerator(AbstractCvGenerator):
                 personal_name = self.cv_data['personal']['name']
                 target_pdf = Path('output') / f'CV - {personal_name}.pdf'
             if source_pdf.exists():
+                # Remove old file if it exists to ensure overwrite
+                if target_pdf.exists():
+                    target_pdf.unlink()
                 source_pdf.replace(target_pdf)
             print(f"✓ PDF generated successfully: {target_pdf}")
         else:
