@@ -2,6 +2,8 @@
 """
 HTML CV Generator - generates CV as static HTML.
 """
+import re
+from datetime import date
 from abstract_cv_generator import AbstractCvGenerator
 
 
@@ -56,6 +58,36 @@ class HtmlCvGenerator(AbstractCvGenerator):
         for char, replacement in replacements.items():
             result = result.replace(char, replacement)
         return result
+    
+    def format_links(self, text):
+        """
+        Format markdown-style links for HTML.
+        
+        Converts [link text](url) to <a href="url" target="_blank">link text</a>.
+        
+        Parameters
+        ----------
+        text : str
+            The text containing markdown-style links [text](url).
+        
+        Returns
+        -------
+        str
+            The text with links converted to HTML <a> tags.
+        """
+        if not isinstance(text, str):
+            text = str(text)
+        
+        # Pattern: [text](url)
+        # Group 1: link text, Group 2: URL
+        def replace_link(match):
+            link_text = match.group(1)
+            url = match.group(2)
+            escaped_text = self.escape_text(link_text)
+            escaped_url = self.escape_text(url)
+            return f'<a href="{escaped_url}" target="_blank" rel="noopener">{escaped_text}</a>'
+        
+        return re.sub(r'\[([^\]]+)\]\(([^\)]+)\)', replace_link, text)
     
     def generate_header(self):
         """
@@ -196,7 +228,7 @@ class HtmlCvGenerator(AbstractCvGenerator):
         
         for job in self.cv_data['experience']:
             highlights = ''.join([
-                f'<li>{self.escape_text(h)}</li>'
+                f'<li>{self.format_links(self.escape_text(h))}</li>'
                 for h in job['highlights']
             ])
             
@@ -431,7 +463,7 @@ class HtmlCvGenerator(AbstractCvGenerator):
             "  </main>" + "\n"
             "\n"
             '  <footer class="footer">' + "\n"
-            "    <p>Generated on 2026-01-24 • "
+            f"    <p>Generated on {date.today().strftime('%Y-%m-%d')} • "
             '<a href="https://github.com/tom-bower/cv">View on GitHub</a></p>' + "\n"
             "  </footer>" + "\n"
             "\n"
