@@ -2,6 +2,7 @@
 """
 PDF CV Generator - generates CV as PDF via LaTeX.
 """
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -67,6 +68,38 @@ class PdfCvGenerator(AbstractCvGenerator):
         for char, replacement in replacements:
             result = result.replace(char, replacement)
         return result
+    
+    def format_links(self, text):
+        """
+        Format markdown-style links for LaTeX/PDF.
+        
+        Converts [link text](url) to \href{url}{link text}.
+        After escaping for LaTeX safety.
+        
+        Parameters
+        ----------
+        text : str
+            The text containing markdown-style links [text](url).
+        
+        Returns
+        -------
+        str
+            The text with links converted to LaTeX \href commands.
+        """
+        if not isinstance(text, str):
+            text = str(text)
+        
+        # Pattern: [text](url)
+        # Group 1: link text, Group 2: URL
+        def replace_link(match):
+            link_text = match.group(1)
+            url = match.group(2)
+            # Escape the link text and URL for LaTeX
+            escaped_text = self.escape_text(link_text)
+            escaped_url = self.escape_text(url)
+            return rf'\href{{{escaped_url}}}{{{escaped_text}}}'
+        
+        return re.sub(r'\[([^\]]+)\]\(([^\)]+)\)', replace_link, text)
     
     def generate_header(self):
         """
@@ -188,7 +221,7 @@ class PdfCvGenerator(AbstractCvGenerator):
             for highlight in job['highlights']:
                 self.content += (
                     r"\begin{itemize}[leftmargin=0.25in,topsep=-0.1cm,partopsep=0pt]" + "\n"
-                    r"\item {\small " + self.escape_text(highlight) + r"}" + "\n"
+                    r"\item {\small " + self.format_links(self.escape_text(highlight)) + r"}" + "\n"
                     r"\end{itemize}" + "\n"
                 )
             

@@ -80,6 +80,27 @@ class AbstractCvGenerator(ABC):
         pass
     
     @abstractmethod
+    def format_links(self, text):
+        """
+        Format markdown-style links for the target format.
+        
+        Converts markdown-style links [text](url) to format-specific links:
+        - HTML: <a href="url">text</a>
+        - PDF/LaTeX: \href{url}{text}
+        
+        Parameters
+        ----------
+        text : str
+            The text containing markdown-style links.
+        
+        Returns
+        -------
+        str
+            The text with links converted to format-specific syntax.
+        """
+        pass
+    
+    @abstractmethod
     def generate_header(self):
         """
         Generate header section.

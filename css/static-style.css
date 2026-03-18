@@ -366,6 +366,13 @@ section h2 {
   margin-bottom: 0.5rem;
   line-height: 1.6;
 }
+.job-highlights li a {
+  color: var(--primary);
+  text-decoration: none;
+}
+.job-highlights li a:hover {
+  text-decoration: underline;
+}
 
 /* Education */
 .education-list {
